@@ -14,5 +14,4 @@ public:
 
 private:
     Ui::TitanicClass ui;
-    AbstractChartView acv;
 };
