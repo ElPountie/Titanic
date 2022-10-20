@@ -2,6 +2,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_Titanic.h"
+#include "AbstractChartView.h"
 
 class Titanic : public QMainWindow
 {
@@ -13,4 +14,5 @@ public:
 
 private:
     Ui::TitanicClass ui;
+    AbstractChartView acv;
 };
