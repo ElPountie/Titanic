@@ -4,12 +4,10 @@
 
 int main(int argc, char *argv[])
 {
-    /*
+    Data* data = new Data();
+    data->readFile("titanic.dbf");
     QApplication a(argc, argv);
-    Titanic w;
+    Titanic w(data);
     w.show();
     return a.exec();
-    */
-    Data d;
-    d.readFile("titanic.dbf");
 }

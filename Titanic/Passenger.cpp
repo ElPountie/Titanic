@@ -1,6 +1,6 @@
 #include "Passenger.h"
 
-Passenger::Passenger(string iden, int clas, int age, int sex, int survived)
+Passenger::Passenger(QString iden, int clas, int age, int sex, int survived)
 {
 	this->_iden = iden;
 	this->_class = clas;
@@ -9,10 +9,14 @@ Passenger::Passenger(string iden, int clas, int age, int sex, int survived)
 	this->_survived = survived;
 }
 
-Passenger::Passenger()
-{
+int Passenger::getSex() {
+	return this->_sex;
 }
 
-Passenger::~Passenger()
-{
+int Passenger::getClass() {
+	return this->_class;
+}
+
+int Passenger::getSurvived() {
+	return this->_survived;
 }

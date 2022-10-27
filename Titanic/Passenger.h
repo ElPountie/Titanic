@@ -1,14 +1,16 @@
 #include<iostream>
+#include<qstring.h>
 using namespace std;
 #pragma once
 class Passenger
 {
 private : 
-	string _iden;
+	QString _iden;
 	int _class, _age, _sex, _survived;
 public :
-	Passenger(string iden, int clas, int age, int sex, int survived);
-	Passenger();
-	~Passenger();
+	Passenger(QString iden, int clas, int age, int sex, int survived);
+	int getSex();
+	int getClass();
+	int getSurvived();
 };
 

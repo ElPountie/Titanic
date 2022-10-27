@@ -1,18 +1,22 @@
 #include "Passenger.h"
-#include<vector>
+#include<qvector>
 #include<fstream>
-#include<string>
+#include<qstring.h>
+#include<map>
+
 
 #pragma once
 class Data
 {
 private:
-	vector <Passenger*> li_Passenger;
+	QVector <Passenger*> li_Passenger;
 public:
 	Data();
 	~Data();
-	vector<Passenger*> getLiPassenger();
+	QVector<Passenger*> getLiPassenger();
 	int countVector();
 	void readFile(const string file);
+	int countPerson(bool gender);
+	map<int, int> countDead();
 };
 

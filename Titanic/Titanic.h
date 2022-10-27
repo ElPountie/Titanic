@@ -9,10 +9,13 @@ class Titanic : public QMainWindow
     Q_OBJECT
 
 public:
-    Titanic(QWidget *parent = nullptr);
+    Titanic(Data* data,QWidget *parent = nullptr);
     ~Titanic();
 
 private:
     Ui::TitanicClass ui;
-    AbstractChartView acv;
+    Data* data;
+private slots:
+    void displayPieChart();
+    void displayBarChart();
 };
