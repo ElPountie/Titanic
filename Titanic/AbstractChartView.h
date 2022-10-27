@@ -4,6 +4,7 @@
 #include"Data.h"
 
 #pragma once
+#include "qwidget.h"
 class AbstractChartView
 {
 public:
