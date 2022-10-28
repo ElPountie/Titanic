@@ -9,7 +9,7 @@ class Titanic : public QMainWindow
     Q_OBJECT
 
 public:
-    Titanic(Data* data,QWidget *parent = nullptr);
+    Titanic(Data *data,QWidget *parent = nullptr);
     ~Titanic();
 
 private:
@@ -17,5 +17,5 @@ private:
     Data* data;
 private slots:
     void displayPieChart();
-    void displayBarChart();
+    //void displayBarChart();
 };

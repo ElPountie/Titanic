@@ -3,7 +3,7 @@
 #include"Titanic.h"
 #include<qbarset.h>
 
-QWidget* PieChartView::getChartView(Data* d)
+QWidget* PieChartView::getChartView(Data *d)
 {
 	this->mypie = new QPieSeries();
 	int cpt_femme = d->countPerson(false);

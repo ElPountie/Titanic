@@ -64,7 +64,7 @@ int Data::countPerson(bool gender) {
 	return cpt;
 }
 
-map<int, int> Data::countDead() {
+/*map<int, int> Data::countDead() {
 	map<int, int> tmp;
 	int cptCrew = 0, cptFirst = 0, cptSecond = 0, cptThird = 0;
 	for (auto index : this->li_Passenger) {
@@ -92,4 +92,4 @@ map<int, int> Data::countDead() {
 	tmp.insert(3, cptThird);
 	
 	return tmp;
-}
+}*/

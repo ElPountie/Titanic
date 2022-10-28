@@ -9,7 +9,7 @@ class AbstractChartView
 {
 public:
 	virtual ~AbstractChartView() = default;
-	virtual QWidget* getChartView(Data* d) = 0;
+	virtual QWidget* getChartView(Data *d) = 0;
 };
 
 class PieChartView : public AbstractChartView{
@@ -18,15 +18,15 @@ private:
 	QChart *mychart;
 	QChartView* myview;
 public:
-	QWidget* getChartView(Data* d) override;
+	QWidget* getChartView(Data *d) override;
 };
 
 class BarChartView : public AbstractChartView {
 public:
-	QWidget* getChartView(Data* d) override;
+	QWidget* getChartView(Data *d) override;
 };
 
 class MultiChartView : public AbstractChartView {
 public:
-	QWidget* getChartView(Data* d) override;
+	QWidget* getChartView(Data *d) override;
 };
